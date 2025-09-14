@@ -317,8 +317,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vmin;
-    height: 100vmin;
+    width: max(100vmin, 1400px);
+    height: max(100vmin, 1400px);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -382,14 +382,15 @@ body {
     pointer-events: none;
 }
 
-.orbit-1 { width: 120px; height: 120px; animation: orbit 10s linear infinite; }
-.orbit-2 { width: 180px; height: 180px; animation: orbit 15s linear infinite; }
-.orbit-3 { width: 240px; height: 240px; animation: orbit 20s linear infinite; }
-.orbit-4 { width: 320px; height: 320px; animation: orbit 25s linear infinite; }
-.orbit-5 { width: 450px; height: 450px; animation: orbit 35s linear infinite; }
-.orbit-6 { width: 550px; height: 550px; animation: orbit 45s linear infinite; }
-.orbit-7 { width: 650px; height: 650px; animation: orbit 55s linear infinite; }
-.orbit-8 { width: 750px; height: 750px; animation: orbit 65s linear infinite; }
+/* Solar System Distances (proportionally accurate with logarithmic scaling for outer planets) */
+/* Mercury: 0.39 AU */ .orbit-1 { width: 78px; height: 78px; animation: orbit 10s linear infinite; }
+/* Venus: 0.72 AU */   .orbit-2 { width: 130px; height: 130px; animation: orbit 15s linear infinite; }
+/* Earth: 1.00 AU */   .orbit-3 { width: 180px; height: 180px; animation: orbit 20s linear infinite; }
+/* Mars: 1.52 AU */    .orbit-4 { width: 260px; height: 260px; animation: orbit 25s linear infinite; }
+/* Jupiter: 5.20 AU */ .orbit-5 { width: 520px; height: 520px; animation: orbit 35s linear infinite; }
+/* Saturn: 9.54 AU */  .orbit-6 { width: 720px; height: 720px; animation: orbit 45s linear infinite; }
+/* Uranus: 19.19 AU */ .orbit-7 { width: 940px; height: 940px; animation: orbit 55s linear infinite; }
+/* Neptune: 30.07 AU */.orbit-8 { width: 1180px; height: 1180px; animation: orbit 65s linear infinite; }
 
 @keyframes orbit {
     from { transform: translate(-50%, -50%) rotate(0deg); }
@@ -673,14 +674,25 @@ body {
     position: relative;
 }
 
-.saturn-large::after {
+/* Saturn rings scaled for large detail view */
+.saturn-large .saturn-rings {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    border: 4px solid var(--gray-400);
+    border-radius: 50%;
+}
+
+.saturn-large .saturn-rings::before {
     content: '';
     position: absolute;
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    border: 3px solid var(--gray-400);
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border: 3px solid var(--gray-500);
     border-radius: 50%;
 }
 
