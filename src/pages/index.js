@@ -4,8 +4,9 @@ import Navigation from '../components/Navigation'
 import SolarSystem from '../components/SolarSystem'
 import PlanetDetails from '../components/PlanetDetails'
 import FloatingCTA from '../components/FloatingCTA'
+import AnimationControl from '../components/AnimationControl'
 import WelcomeOverlay from '../components/WelcomeOverlay'
-import Info from '../components/Info' // <-- Add this import
+import Info from '../components/Info'
 import useStratosphere from '../hooks/useStratosphere'
 
 export default function Home() {
@@ -24,12 +25,7 @@ export default function Home() {
     <>
       <Head>
         <title>Stratosphere</title>
-        <meta name="description" content="A website for Stratosphere, our Hack the North 2025 Submission." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
       {isLoading && (
@@ -51,6 +47,8 @@ export default function Home() {
             onBack={hidePlanetDetails}
           />
 
+          <AnimationControl />
+          
           <FloatingCTA />
 
           <WelcomeOverlay 
@@ -58,7 +56,7 @@ export default function Home() {
             onClose={hideWelcome}
           />
 
-          <Info /> {/* <-- Add the Info component here */}
+          <Info />
         </main>
       )}
     </>
