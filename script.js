@@ -418,10 +418,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         infoContent.innerHTML = `
             <div style="margin-bottom: 2rem;">
-                <div style="width: 100px; height: 100px; margin: 0 auto 2rem; border: 3px solid var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; animation: logoSpin 20s linear infinite;">
-                    <div style="width: 60px; height: 60px; background: var(--white); border-radius: 50%; position: relative;">
-                        <div style="width: 15px; height: 15px; background: var(--black); border-radius: 50%; position: absolute; top: 18px; right: 18px;"></div>
-                    </div>
+                <div class="welcome-logo-container" style="width: 100px; height: 100px; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; animation: logoSpin 20s linear infinite;">
+                    <img src="public/favicon.svg" alt="Stratosphere Logo" style="width: 100px; height: 100px;">
                 </div>
                 <h1 style="font-family: 'Space Mono', monospace; font-size: 3rem; margin-bottom: 1.5rem; color: var(--white); letter-spacing: 0.1em;">Welcome to Stratosphere</h1>
                 <p style="color: var(--gray-300); font-size: 1.4rem; line-height: 1.6; margin-bottom: 2rem;">Explore the universe of possibilities by clicking on each planet to discover what Stratosphere can do for you.</p>

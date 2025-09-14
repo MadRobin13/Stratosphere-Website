@@ -52,7 +52,7 @@ const planetData = {
   saturn: {
     title: 'Saturn',
     subtitle: 'Structured Excellence',
-    description: 'Saturn\'s magnificent rings represent perfect organization and structure. Stratosphere brings order to chaos with its systematic approach to data management.',
+    description: 'Saturn\'s magnificent rings represent perfect organization and structure. Stratosphere brings order to chaos with its systematic approach to coding.',
     features: [
       'Structured data flows',
       'Organized workflows',
@@ -72,7 +72,7 @@ const planetData = {
   neptune: {
     title: 'Neptune',
     subtitle: 'Deep Discovery',
-    description: 'Neptune, the distant explorer, represents deep insights and discovery. Stratosphere helps you uncover hidden patterns and profound understanding in your data.',
+    description: 'Neptune, the distant explorer, represents deep insights and discovery. Stratosphere helps you uncover hidden patterns and profound understanding in your code.',
     features: [
       'Deep analytics',
       'Pattern recognition',

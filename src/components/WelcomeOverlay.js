@@ -36,30 +36,12 @@ export default function WelcomeOverlay({ isVisible, onClose }) {
             width: '100px',
             height: '100px',
             margin: '0 auto 2rem',
-            border: '3px solid var(--white)',
-            borderRadius: '50%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             animation: 'logoSpin 20s linear infinite'
           }}>
-            <div style={{
-              width: '60px',
-              height: '60px',
-              background: 'var(--white)',
-              borderRadius: '50%',
-              position: 'relative'
-            }}>
-              <div style={{
-                width: '15px',
-                height: '15px',
-                background: 'var(--black)',
-                borderRadius: '50%',
-                position: 'absolute',
-                top: '18px',
-                right: '18px'
-              }}></div>
-            </div>
+            <img src="/favicon.svg" alt="Stratosphere Logo" style={{ width: '100px', height: '100px' }} />
           </div>
           <h1 style={{
             fontFamily: "'Space Mono', monospace",

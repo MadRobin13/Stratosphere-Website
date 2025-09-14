@@ -3,10 +3,7 @@ export default function Navigation() {
     <nav className="nav">
       <div className="logo-container">
         <div className="logo">
-          <div className="logo-circle">
-            <div className="logo-inner-circle"></div>
-            <div className="logo-dot"></div>
-          </div>
+          <img src="/favicon.svg" className="logo-svg" width="40" height="40" />
           <span className="logo-text">STRATOSPHERE</span>
         </div>
       </div>
