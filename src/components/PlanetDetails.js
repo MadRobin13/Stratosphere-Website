@@ -1,8 +1,8 @@
 const planetData = {
   mercury: {
     title: 'Mercury',
-    subtitle: 'Swift Messenger',
-    description: 'Experience lightning-fast performance with Stratosphere\'s Mercury engine. Just like the closest planet to the sun, our platform delivers rapid responses and blazing-fast data processing.',
+    subtitle: 'Swift Operation',
+    description: 'Harness lightning-fast execution with the Mercury Engine — write, build, and deploy code at speeds that feel instantaneous.',
     features: [
       'Millisecond response times',
       'Real-time data synchronization',
@@ -12,7 +12,7 @@ const planetData = {
   venus: {
     title: 'Venus',
     subtitle: 'Beautiful Interface',
-    description: 'Like Venus\'s stunning brilliance in the sky, Stratosphere offers an elegant and intuitive user interface that captivates and inspires productivity.',
+    description: 'Elevate productivity with an interface that doesn’t just work — it inspires. Venus delivers elegance, clarity, and a visual experience that feels effortless.',
     features: [
       'Stunning visual design',
       'Intuitive user experience',
@@ -21,8 +21,8 @@ const planetData = {
   },
   earth: {
     title: 'Earth',
-    subtitle: 'Home Base',
-    description: 'Earth represents our foundation - reliable, stable, and life-supporting. Stratosphere provides the solid ground your projects need to thrive and grow.',
+    subtitle: 'Humanity',
+    description: 'Your AI coding companion that understands you. Earth enables fluid, natural conversations, turning human thought into precise, working code.',
     features: [
       'Rock-solid reliability',
       'Comprehensive ecosystem',
@@ -31,8 +31,8 @@ const planetData = {
   },
   mars: {
     title: 'Mars',
-    subtitle: 'Innovation Frontier',
-    description: 'Mars embodies exploration and innovation. With Stratosphere, push the boundaries of what\'s possible and venture into uncharted territories of creativity.',
+    subtitle: 'Spontaneity',
+    description: 'Move fast, experiment freely, and code without limits. Mars empowers you to iterate, test, and innovate from anywhere in the universe.',
     features: [
       'Cutting-edge technology',
       'Advanced analytics',
@@ -41,8 +41,8 @@ const planetData = {
   },
   jupiter: {
     title: 'Jupiter',
-    subtitle: 'Massive Scale',
-    description: 'Like Jupiter\'s immense size and gravitational influence, Stratosphere handles enterprise-scale challenges with ease and maintains perfect order in complex systems.',
+    subtitle: 'Complexity',
+    description: 'Conquer massive projects with ease. Jupiter brings the muscle to handle sprawling codebases, complex systems, and enterprise-grade performance demands.',
     features: [
       'Enterprise scalability',
       'Powerful processing',
@@ -51,35 +51,16 @@ const planetData = {
   },
   saturn: {
     title: 'Saturn',
-    subtitle: 'Structured Excellence',
-    description: 'Saturn\'s magnificent rings represent perfect organization and structure. Stratosphere brings order to chaos with its systematic approach to coding.',
+    subtitle: 'Connected',
+    description: 'Saturn is collaboration without friction — seamlessly integrated with GitHub, structured for teamwork, and built for collective success.',
     features: [
       'Structured data flows',
       'Organized workflows',
       'Systematic processes'
     ]
-  },
-  uranus: {
-    title: 'Uranus',
-    subtitle: 'Unique Perspective',
-    description: 'Uranus rotates on its side, offering a unique perspective. Stratosphere provides fresh insights and innovative approaches to traditional challenges.',
-    features: [
-      'Innovative solutions',
-      'Fresh perspectives',
-      'Unique methodologies'
-    ]
-  },
-  neptune: {
-    title: 'Neptune',
-    subtitle: 'Deep Discovery',
-    description: 'Neptune, the distant explorer, represents deep insights and discovery. Stratosphere helps you uncover hidden patterns and profound understanding in your code.',
-    features: [
-      'Deep analytics',
-      'Pattern recognition',
-      'Insightful reporting'
-    ]
   }
 }
+
 
 export default function PlanetDetails({ currentPlanet, isActive, onBack }) {
   if (!currentPlanet || !isActive) {
@@ -94,7 +75,7 @@ export default function PlanetDetails({ currentPlanet, isActive, onBack }) {
         className="back-button"
         onClick={onBack}
       >
-        ← Back to Solar System
+        ←
       </button>
       
       <div className={`planet-content ${currentPlanet}-content active`} data-planet={currentPlanet}>

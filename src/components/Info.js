@@ -31,7 +31,7 @@ const mobileStyle = {
     padding: '0.9rem 1.2rem',
     fontSize: '1rem',
     borderRadius: '14px',
-    maxWidth: '90vw'
+    maxWidth: '80vw'
 };
 
 const Info = () => {

@@ -40,7 +40,7 @@ export default function SolarSystem({ isZoomed, onPlanetClick }) {
   return (
     <div 
       id="solar-system" 
-      className={`solar-system w-screen h-screen absolute ${isZoomed ? 'zoomed' : ''}`}
+      className={`solar-system absolute ${isZoomed ? 'zoomed' : ''}`}
     >
       <div className="sun">
         <div className="sun-core"></div>
@@ -48,7 +48,7 @@ export default function SolarSystem({ isZoomed, onPlanetClick }) {
       </div>
 
       {planets.map(({ name, orbit }) => (
-        <div key={name} className={`orbit orbit-${orbit}`}>
+        <div key={name} className={`orbit orbit-${orbit} spin transition-all`}>
           <div 
             className={`planet ${name}`} 
             data-planet={name}

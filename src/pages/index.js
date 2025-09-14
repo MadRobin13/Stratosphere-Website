@@ -7,6 +7,7 @@ import FloatingCTA from '../components/FloatingCTA'
 import WelcomeOverlay from '../components/WelcomeOverlay'
 import Info from '../components/Info' // <-- Add this import
 import useStratosphere from '../hooks/useStratosphere'
+import StopButton from '../components/StopButton'
 
 export default function Home() {
   const {
@@ -44,6 +45,8 @@ export default function Home() {
             isZoomed={!!currentPlanet}
             onPlanetClick={showPlanetDetails}
           />
+
+          <StopButton></StopButton>
 
           <PlanetDetails 
             currentPlanet={currentPlanet}
