@@ -18,7 +18,7 @@ export default function SolarSystem({ isZoomed, onPlanetClick }) {
       for (let i = 1; i <= 8; i++) {
         const orbit = document.querySelector(`.orbit-${i}`)
         if (orbit) {
-          const animationDurations = [10, 15, 20, 25, 35, 45, 55, 65]
+          const animationDurations = [4.8, 12.3, 20, 37.6, 237.7, 589.8, 1681.1, 3296.4]
           const duration = animationDurations[i - 1]
           const randomDelay = -Math.random() * duration
           orbit.style.animationDelay = `${randomDelay}s`
