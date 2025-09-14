@@ -5,6 +5,7 @@ import SolarSystem from '../components/SolarSystem'
 import PlanetDetails from '../components/PlanetDetails'
 import FloatingCTA from '../components/FloatingCTA'
 import WelcomeOverlay from '../components/WelcomeOverlay'
+import Info from '../components/Info' // <-- Add this import
 import useStratosphere from '../hooks/useStratosphere'
 
 export default function Home() {
@@ -53,6 +54,8 @@ export default function Home() {
             isVisible={showWelcome}
             onClose={hideWelcome}
           />
+
+          <Info /> {/* <-- Add the Info component here */}
         </main>
       )}
     </>
